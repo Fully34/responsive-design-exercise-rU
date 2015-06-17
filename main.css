@@ -25,25 +25,22 @@ body {
     display: block;
     position: relative;
     max-width: 960px;
-    /*border: 1px solid black;*/
-    /*border-radius: 5px;*/
     text-align: center;
     margin: 0 auto;
 }
 
 .nav-link {
     display: inline-block;
-    padding: 10px;
     font-family: orbitron, sans-sarif;
 }
 
 .nav-link a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px 15px;
 }
 
-.nav-link a:hover {
+a.nav-link:hover {
     color: black;
     background-color: #00ff00;
     border-top: 5px solid black;
@@ -71,9 +68,9 @@ body {
 }
 
 .text-content {
-    padding: 15px;
     color: #00ff00;
     font-family: orbitron, sans-sarif;
+    padding: 0 15px;
 }
 
 /*===========================================================================*/
@@ -83,7 +80,7 @@ body {
 .container {
     max-width: 960px;
     margin: 20px auto;
-    padding: 0 20px;
+/*    padding: 0 20px;*/
     text-align: center;
 }
 
@@ -92,6 +89,9 @@ body {
     padding: 10px;
 }
 
+.large-img {
+    width: 100%;
+}
 
 
 /*===========================================================================*/
@@ -99,7 +99,40 @@ body {
 /*===========================================================================*/
 
 
+@media (max-width: 915px) {
+    .nav-link{
+        display: block;
+        padding: 5px;
+    }
 
+    .nav-style a {
+        border-top: 2px solid #00FF00;
+        border-bottom: 5px solid #00FF00;
+    }
 
+    a.nav-link:hover {
+        color: black;
+        background-color: #00ff00;
+        border-top: 5px solid #00FF00;
+        border-bottom: 2px solid #00FF00;
+        border-radius: 15px; 
+    }
+}
 
+@media (max-width: 515px) {
+    .pic-container {
+        display:block;
+    }
+}
 
+@media (max-width: 960px) {
+    .container{
+        padding: 0 20px;
+    }
+    .navbar {
+        padding: 20px;
+    }
+    .text-container {
+        padding: 0 20px;
+    }
+}
